@@ -1,4 +1,4 @@
-# K4 — Level 3, Ngày 12: Hạ Tầng Cloud & Deployment (9h00–13h00)
+# K4 — Level 3, Ngày 12: Hạ Tầng Cloud & Deployment (240 phút)
 
 Đưa một AI agent từ `localhost:8000` lên một địa chỉ công khai mà người khác
 gọi được, có bảo mật, có giới hạn chi phí, và không sập khi bạn deploy bản mới.
@@ -11,10 +11,10 @@ gọi được, có bảo mật, có giới hạn chi phí, và không sập khi
 
 Tài liệu chính thức của bài lab:
 
-- [SUBMISSION.md](SUBMISSION.md) — cấu trúc bài nộp, tên repo, nơi nộp và deadline
+- [SUBMISSION.md](SUBMISSION.md) — cấu trúc bài nộp, tên repo và nơi nộp
 - [RUBRIC.md](RUBRIC.md) — tiêu chí chấm, bằng chứng và điều kiện mất điểm
 - [CHECKPOINTS.md](CHECKPOINTS.md) — sản phẩm, kiến thức và cách tự kiểm tra từng checkpoint
-- [RULES.md](RULES.md) — quy định làm bài, dùng AI, hợp tác, nộp muộn và bảo mật
+- [RULES.md](RULES.md) — quy định làm bài, dùng AI, hợp tác và bảo mật
 
 | Được phép | Không được phép |
 |-----------|-----------------|
@@ -89,23 +89,24 @@ Sau buổi lab này, bạn sẽ:
 
 ## Lịch Trình & Checkpoint
 
-| Giờ | Nội dung | Checkpoint | Điểm |
+| Thời gian từ lúc bắt đầu | Nội dung | Checkpoint | Điểm |
 |-----|----------|------------|------|
-| 9h00–9h20 | Setup môi trường, tạo repo đúng tên | **CP0:** `pytest tests/ -v` chạy được (rớt hết là đúng — bạn chưa code) | — |
-| 9h20–10h00 | **Block 1** — 12-Factor Config, Health, Logging | **CP1 (10h00):** `pytest tests/test_cp1.py -v` | 15 |
-| 10h00–10h45 | **Block 2** — Docker: multi-stage, bảo mật image | **CP2 (10h45):** `pytest tests/test_cp2.py -v` | 15 |
-| 10h45–10h55 | ☕ Giải lao | — | — |
-| 10h55–11h40 | **Block 3** — API Security: auth, rate limit, cost guard | **CP3 (11h40):** `pytest tests/test_cp3.py -v` | 20 |
-| 11h40–12h20 | **Block 4** — Scaling & Reliability | **CP4 (12h20):** `pytest tests/test_cp4.py -v` | 20 |
-| 12h20–12h50 | **Block 5** — Deploy lên cloud | **CP5 (12h50):** `pytest tests/test_cp5.py -v` | 15 |
-| 12h50–13h00 | Hoàn thiện `exercises.md`, `python grade.py`, nộp bài | | 15 |
+| Start +0–20 phút | Setup môi trường, tạo repo đúng tên | **CP0 tại Start +20 phút:** `pytest tests/ -v` chạy được (rớt hết là đúng — bạn chưa code) | — |
+| Start +20–60 phút | **Block 1** — 12-Factor Config, Health, Logging | **CP1 tại Start +60 phút:** `pytest tests/test_cp1.py -v` | 15 |
+| Start +60–105 phút | **Block 2** — Docker: multi-stage, bảo mật image | **CP2 tại Start +105 phút:** `pytest tests/test_cp2.py -v` | 15 |
+| Start +105–115 phút | ☕ Giải lao | — | — |
+| Start +115–160 phút | **Block 3** — API Security: auth, rate limit, cost guard | **CP3 tại Start +160 phút:** `pytest tests/test_cp3.py -v` | 20 |
+| Start +160–200 phút | **Block 4** — Scaling & Reliability | **CP4 tại Start +200 phút:** `pytest tests/test_cp4.py -v` | 20 |
+| Start +200–230 phút | **Block 5** — Deploy lên cloud | **CP5 tại Start +230 phút:** `pytest tests/test_cp5.py -v` | 15 |
+| Start +230–240 phút | Hoàn thiện `exercises.md`, `python grade.py`, nộp bài | | 15 |
 | — | **BONUS** — CI/CD với GitHub Actions (không bắt buộc) | `pytest tests/test_bonus_cicd.py -v` | +10 |
 
-**Cách dùng checkpoint:** đến mốc giờ nào thì chạy lệnh của checkpoint đó. Xanh
-hết → sang block sau. Còn đỏ → đọc thông báo lỗi (mỗi test đều ghi rõ sai ở đâu
-và vì sao điều đó quan trọng), sửa, chạy lại. Kẹt quá 10 phút thì gọi Lab Coach
-và **đi tiếp block sau** — làm được đến đâu có điểm đến đó, đừng để tắc một chỗ
-mà mất cả các block còn lại.
+**Cách dùng checkpoint:** ghi nhận thời điểm buổi lab bắt đầu là `Start`, sau đó
+chạy lệnh checkpoint tại mốc `Start + N phút` tương ứng. Xanh hết → sang block
+sau. Còn đỏ → đọc thông báo lỗi (mỗi test đều ghi rõ sai ở đâu và vì sao điều
+đó quan trọng), sửa, chạy lại. Kẹt quá 10 phút thì gọi Lab Coach và **đi tiếp
+block sau** — làm được đến đâu có điểm đến đó, đừng để tắc một chỗ mà mất cả
+các block còn lại.
 
 **Phần BONUS** dành cho bạn nào xong sớm hoặc muốn làm thêm sau buổi lab: tự
 viết một workflow GitHub Actions để mỗi lần push là tự chạy test, tự build
@@ -270,12 +271,6 @@ git push
 ```
 
 Nộp **link repository** lên Codelab. Repo phải ở chế độ public.
-
-**Hạn nộp mặc định:** 23h59 trong ngày làm lab, theo múi giờ
-`Asia/Ho_Chi_Minh` (UTC+7). Nếu Key Coach có thông báo deadline khác trong
-vòng 48 giờ sau khi kết thúc lab, deadline trong thông báo đó được áp dụng.
-Bài nộp hoặc commit sau deadline hợp lệ được xem là nộp muộn và bị trừ điểm
-theo quy định trong [RULES.md](RULES.md).
 
 ---
 

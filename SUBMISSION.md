@@ -48,16 +48,6 @@ Không nộp `.env`, API key, token, mật khẩu, private key hoặc dữ liệ
 Nộp **link repository GitHub** lên Codelab. Repo phải ở chế độ public để Lab
 Coach truy cập được trong thời gian chấm.
 
-## Deadline
-
-- Deadline mặc định là **23h59 trong ngày làm lab**, theo múi giờ
-  `Asia/Ho_Chi_Minh` (UTC+7).
-- Nếu Key Coach thông báo deadline khác trong vòng **48 giờ sau khi kết thúc
-  lab**, thời điểm trong thông báo chính thức đó thay thế deadline mặc định.
-- Bài nộp hoặc commit sau deadline hợp lệ được xem là nộp muộn và bị trừ điểm
-  theo [RULES.md](RULES.md). Thông báo chính thức của Key Coach quyết định mức
-  trừ nếu khóa học áp dụng một mức cụ thể.
-
 ## Kiểm tra trước khi nộp
 
 ```bash

@@ -34,10 +34,7 @@ Phần Nginx/load balancing là hoạt động mở rộng để học, không t
 - Sai mẫu tên repository: trừ 5 điểm.
 - Commit `.env`, API key hoặc secret: trừ 10 điểm; học viên phải thu hồi và đổi
   secret ngay. Xóa ở commit mới không loại secret khỏi lịch sử Git.
-- Nộp hoặc sửa bài sau deadline hợp lệ: bị tính là nộp muộn và trừ điểm theo
-  thông báo chính thức của Key Coach/quy định khóa học.
 - Không giải thích được phần code hoặc nội dung đã nộp khi được hỏi: hủy điểm
   phần tương ứng.
 - Sao chép bài hoặc có hai bài trùng nhau bất thường: cả hai bài có thể nhận
   0 điểm theo [RULES.md](RULES.md).
-

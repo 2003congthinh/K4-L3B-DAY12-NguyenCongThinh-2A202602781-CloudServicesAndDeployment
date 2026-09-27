@@ -33,20 +33,6 @@ chỉnh, sao chép code, nhờ người khác làm hộ hoặc phối hợp đ�
 nhau. Nếu hai bài trùng nhau bất thường, cả hai có thể nhận 0 điểm, không phân
 biệt ai là người sao chép trước.
 
-## Deadline, nộp muộn và sửa bài
-
-- Deadline mặc định là **23h59 trong ngày làm lab**, theo múi giờ
-  `Asia/Ho_Chi_Minh` (UTC+7).
-- Key Coach có thể thông báo deadline khác trong vòng **48 giờ sau khi kết
-  thúc lab**. Khi có thông báo, deadline mới là mốc chính thức.
-- Bài nộp sau deadline chính thức bị xem là nộp muộn và bị trừ điểm theo mức
-  Key Coach/quy định khóa học công bố.
-- Commit hoặc thay đổi nội dung sau deadline cũng được xem là sửa bài sau hạn.
-  Lab Coach có quyền chấm theo commit cuối trước deadline hoặc áp dụng quy định
-  nộp muộn cho phần thay đổi sau hạn.
-- Không rewrite lịch sử Git, đổi timestamp hoặc dùng thủ thuật để che giấu thời
-  điểm sửa bài.
-
 ## Bảo mật
 
 - Không commit `.env`, API key, token, mật khẩu, private key hoặc credential
@@ -64,4 +50,3 @@ biệt ai là người sao chép trước.
 Tổng bonus của bài lab tối đa **10 điểm**, dành cho sản phẩm CI/CD trong
 [RUBRIC.md](RUBRIC.md). Đây không phải điểm giơ tay, phát biểu hoặc pitching.
 Nginx/load balancing là phần mở rộng kiến thức và không tạo thêm bonus riêng.
-

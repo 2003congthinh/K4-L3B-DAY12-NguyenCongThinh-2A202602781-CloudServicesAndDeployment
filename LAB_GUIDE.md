@@ -2,26 +2,28 @@
 
 > **Bài làm cá nhân.** Xem quy định và cách đặt tên repo ở [README.md](README.md).
 >
-> Mỗi block kết thúc bằng một checkpoint. Đến giờ thì chạy lệnh checkpoint,
-> xanh hết mới sang block sau. Kẹt quá 10 phút → gọi Lab Coach và đi tiếp,
-> đừng đứng lại một chỗ.
+> Ghi nhận thời điểm buổi lab bắt đầu là `Start`. Mỗi block kết thúc bằng một
+> checkpoint tại mốc `Start + N phút`; chạy lệnh checkpoint, xanh hết mới sang
+> block sau. Kẹt quá 10 phút → gọi Lab Coach và đi tiếp, đừng đứng lại một chỗ.
 
 **Mục lục**
 
-- [CP0 — Setup (9h00–9h20)](#cp0--setup-9h009h20)
-- [Block 1 — 12-Factor Config, Health & Logging (9h20–10h00)](#block-1--12-factor-config-health--logging-9h2010h00)
-- [Block 2 — Docker (10h00–10h45)](#block-2--docker-10h0010h45)
-- [Block 3 — API Security (10h55–11h40)](#block-3--api-security-10h5511h40)
-- [Block 4 — Scaling & Reliability (11h40–12h20)](#block-4--scaling--reliability-11h4012h20)
-- [Block 5 — Cloud Deployment (12h20–12h50)](#block-5--cloud-deployment-12h2012h50)
+- [CP0 — Setup (Start +0–20 phút)](#cp0--setup)
+- [Block 1 — 12-Factor Config, Health & Logging (Start +20–60 phút)](#block-1--12-factor-config-health--logging)
+- [Block 2 — Docker (Start +60–105 phút)](#block-2--docker)
+- [Block 3 — API Security (Start +115–160 phút)](#block-3--api-security)
+- [Block 4 — Scaling & Reliability (Start +160–200 phút)](#block-4--scaling--reliability)
+- [Block 5 — Cloud Deployment (Start +200–230 phút)](#block-5--cloud-deployment)
 - [Bonus — CI/CD với GitHub Actions (+10 điểm)](#bonus--cicd-với-github-actions-10-điểm)
-- [Wrap-up (12h50–13h00)](#wrap-up-12h5013h00)
+- [Wrap-up (Start +230–240 phút)](#wrap-up)
 - [Phụ lục A — Lỗi thường gặp](#phụ-lục-a--lỗi-thường-gặp)
 - [Phụ lục B — Bảng tra nhanh](#phụ-lục-b--bảng-tra-nhanh)
 
 ---
 
-## CP0 — Setup (9h00–9h20)
+## CP0 — Setup
+
+**Khung thời gian:** Start +0–20 phút. Chạy checkpoint tại Start +20 phút.
 
 ### 1. Tạo repo đúng tên
 
@@ -53,7 +55,7 @@ docker compose ps                  # cột STATE phải là running/healthy
 Chưa có Docker? Đặt `REDIS_URL=fake://` trong `.env` để làm tạm, nhưng nhớ cài
 Docker trước Block 2.
 
-### ✅ Checkpoint 0
+### ✅ Checkpoint 0 — Start +20 phút
 
 ```bash
 pytest tests/ -v -m "not docker"
@@ -65,7 +67,9 @@ thấy `ModuleNotFoundError` hoặc `ImportError`, môi trường chưa cài xon
 
 ---
 
-## Block 1 — 12-Factor Config, Health & Logging (9h20–10h00)
+## Block 1 — 12-Factor Config, Health & Logging
+
+**Khung thời gian:** Start +20–60 phút.
 
 ### Vấn đề
 
@@ -135,7 +139,7 @@ uvicorn app.main:app --reload --port 8000
 curl -i http://localhost:8000/health
 ```
 
-### ✅ Checkpoint 1 (10h00)
+### ✅ Checkpoint 1 — Start +60 phút
 
 ```bash
 pytest tests/test_cp1.py -v
@@ -154,7 +158,9 @@ pytest tests/test_cp1.py -v
 
 ---
 
-## Block 2 — Docker (10h00–10h45)
+## Block 2 — Docker
+
+**Khung thời gian:** Start +60–105 phút.
 
 ### Vấn đề
 
@@ -247,7 +253,7 @@ curl http://localhost:8000/health
 docker compose logs agent
 ```
 
-### ✅ Checkpoint 2 (10h45)
+### ✅ Checkpoint 2 — Start +105 phút
 
 ```bash
 pytest tests/test_cp2.py -v
@@ -274,7 +280,9 @@ pytest tests/test_cp2.py -v -m "not docker"
 
 ---
 
-## Block 3 — API Security (10h55–11h40)
+## Block 3 — API Security
+
+**Khung thời gian:** Start +115–160 phút, sau 10 phút giải lao.
 
 ### Vấn đề
 
@@ -364,7 +372,7 @@ for i in $(seq 1 15); do
 done; echo
 ```
 
-### ✅ Checkpoint 3 (11h40)
+### ✅ Checkpoint 3 — Start +160 phút
 
 ```bash
 pytest tests/test_cp3.py -v
@@ -383,7 +391,9 @@ pytest tests/test_cp3.py -v
 
 ---
 
-## Block 4 — Scaling & Reliability (11h40–12h20)
+## Block 4 — Scaling & Reliability
+
+**Khung thời gian:** Start +160–200 phút.
 
 ### Vấn đề
 
@@ -483,7 +493,7 @@ Muốn xem load balancing thật thì bật thêm service `nginx` (cấu hình �
 `nginx/nginx.conf`) và gọi qua cổng 80 — phần mở rộng tùy chọn, không phải
 bonus chấm điểm riêng.
 
-### ✅ Checkpoint 4 (12h20)
+### ✅ Checkpoint 4 — Start +200 phút
 
 ```bash
 pytest tests/test_cp4.py -v
@@ -504,7 +514,9 @@ pytest tests/test_cp4.py -v
 
 ---
 
-## Block 5 — Cloud Deployment (12h20–12h50)
+## Block 5 — Cloud Deployment
+
+**Khung thời gian:** Start +200–230 phút.
 
 ### Chọn platform
 
@@ -595,7 +607,7 @@ test gọi vào bản deploy, không gọi vào máy bạn.
 
 CP5 khi đó tối đa 9/15 điểm.
 
-### ✅ Checkpoint 5 (12h50)
+### ✅ Checkpoint 5 — Start +230 phút
 
 ```bash
 pytest tests/test_cp5.py -v
@@ -801,7 +813,9 @@ pytest tests/test_bonus_cicd.py -v
 
 ---
 
-## Wrap-up (12h50–13h00)
+## Wrap-up
+
+**Khung thời gian:** Start +230–240 phút.
 
 ```bash
 # 1. Trả lời 10 câu trong exercises.md
