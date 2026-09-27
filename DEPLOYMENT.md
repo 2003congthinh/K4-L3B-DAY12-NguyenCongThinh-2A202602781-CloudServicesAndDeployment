@@ -12,7 +12,7 @@
 |-----|----------|
 | Họ và tên | (điền họ tên) |
 | Mã học viên | (điền mã học viên) |
-| Repo | (điền link repo K4-L3-DAY12-HoVaTen-MSSV-CloudServicesAndDeployment) |
+| Repo | (điền link repo K4-L3A-DAY12-HoVaTen-MSSV-CloudServicesAndDeployment) |
 
 ## Service
 

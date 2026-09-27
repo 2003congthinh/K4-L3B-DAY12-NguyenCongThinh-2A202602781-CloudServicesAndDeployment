@@ -1,4 +1,4 @@
-# Hướng Dẫn Lab — K4 Level 3, Ngày 12: Hạ Tầng Cloud & Deployment
+# Hướng Dẫn Lab — K4 Level 3A, Ngày 12: Hạ Tầng Cloud & Deployment
 
 > **Bài làm cá nhân.** Xem quy định và cách đặt tên repo ở [README.md](README.md).
 >
@@ -552,7 +552,7 @@ service → Variables). Railway tự set `PORT` — đừng ghi đè.
 ### Đường Render
 
 1. Push repo lên GitHub (repo đúng tên
-   `K4-L3-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment`)
+   `K4-L3A-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment`)
 2. [render.com](https://render.com) → **New** → **Blueprint** → chọn repo
 3. Render đọc `render.yaml` có sẵn, tạo cả web service lẫn Redis
 4. Điền `AGENT_API_KEY` khi Render hỏi (khai báo `sync: false` nghĩa là Render
