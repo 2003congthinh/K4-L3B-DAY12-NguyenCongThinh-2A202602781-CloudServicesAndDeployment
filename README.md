@@ -1,4 +1,4 @@
-# K4 — Level 3A, Ngày 12: Hạ Tầng Cloud & Deployment (240 phút)
+# K4 — Level 3B, Ngày 12: Hạ Tầng Cloud & Deployment (240 phút)
 
 Đưa một AI agent từ `localhost:8000` lên một địa chỉ công khai mà người khác
 gọi được, có bảo mật, có giới hạn chi phí, và không sập khi bạn deploy bản mới.
@@ -37,7 +37,7 @@ cùng cấu trúc lạ): cả hai bài đều 0 điểm**, không phân biệt a
 Repo nộp bài **bắt buộc** đặt tên theo mẫu:
 
 ```
-K4-L3A-DAY12-<HoVaTen>-<MSSV>-<TenBai>
+K4-L3B-DAY12-<HoVaTen>-<MSSV>-<TenBai>
 ```
 
 **Quy tắc viết:**
@@ -50,8 +50,8 @@ K4-L3A-DAY12-<HoVaTen>-<MSSV>-<TenBai>
 
 | Học viên | Tên repo |
 |----------|----------|
-| L3A202600280 — Nguyễn Văn An | `K4-L3A-DAY12-NguyenVanAn-L3A202600280-CloudServicesAndDeployment` |
-| L3A202601111 — Trần Thị Bích Hà | `K4-L3A-DAY12-TranThiBichHa-L3A202601111-CloudServicesAndDeployment` |
+| L3B202600280 — Nguyễn Văn An | `K4-L3B-DAY12-NguyenVanAn-L3B202600280-CloudServicesAndDeployment` |
+| L3B202601111 — Trần Thị Bích Hà | `K4-L3B-DAY12-TranThiBichHa-L3B202601111-CloudServicesAndDeployment` |
 
 **Sai tên repo = trừ 5 điểm.** Đây là cách duy nhất để Lab Coach biết bài của ai
 trong khoảng 1000 repo.
@@ -62,7 +62,7 @@ trong khoảng 1000 repo.
 # 1. Fork repo lab về và đổi tên theo cú pháp bên trên
 # 2. Clone repo lab về máy
 git clone <URL repo bạn đã fork>
-cd K4-L3A-DAY12-NguyenVanAn-L3A202600280-CloudServicesAndDeployment
+cd K4-L3B-DAY12-NguyenVanAn-L3B202600280-CloudServicesAndDeployment
 
 # 3. Commit và Push khi hoàn thiện bài lab
 git add .
@@ -173,7 +173,7 @@ trong RAM (đủ để làm CP1/CP3/CP4, nhưng CP2 và CP5 vẫn cần Docker).
 ## Cấu Trúc Thư Mục
 
 ```
-K4-L3A-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment/
+K4-L3B-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment/
 ├── README.md              # File này — quy định, lịch trình, chấm điểm, nộp bài
 ├── LAB_GUIDE.md           # Hướng dẫn chi tiết từng block
 ├── exercises.md           # 10 câu phản ánh
@@ -276,7 +276,7 @@ Nộp **link repository** lên Codelab. Repo phải ở chế độ public.
 
 ## Danh Sách Kiểm Tra Trước Khi Nộp
 
-- [ ] Repo đúng tên `K4-L3A-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment`
+- [ ] Repo đúng tên `K4-L3B-DAY12-<HoVaTen>-<MSSV>-CloudServicesAndDeployment`
 - [ ] `pytest tests/ -v` — đã chạy và biết rõ test nào còn rớt, vì sao
 - [ ] `python grade.py` — xem điểm, mục tiêu ≥ 75/100
 - [ ] `exercises.md` — đủ 10 câu, viết bằng lời của mình

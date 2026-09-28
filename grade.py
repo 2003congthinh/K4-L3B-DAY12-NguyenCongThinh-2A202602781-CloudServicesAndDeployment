@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Chấm điểm tự động — K4 Level 3A, Ngày 12: Hạ Tầng Cloud & Deployment.
+"""Chấm điểm tự động — K4 Level 3B, Ngày 12: Hạ Tầng Cloud & Deployment.
 
 Cách dùng (chạy từ thư mục gốc của repo):
     python grade.py
@@ -102,7 +102,7 @@ def grade_exercises() -> tuple[int, Path | None]:
 
 def main() -> int:
     print("=" * 74)
-    print("CHẤM ĐIỂM TỰ ĐỘNG — K4 LEVEL 3A, NGÀY 12: HẠ TẦNG CLOUD & DEPLOYMENT")
+    print("CHẤM ĐIỂM TỰ ĐỘNG — K4 LEVEL 3B, NGÀY 12: HẠ TẦNG CLOUD & DEPLOYMENT")
     print("=" * 74)
 
     rows = []
